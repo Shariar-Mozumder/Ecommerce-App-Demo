@@ -30,15 +30,19 @@ namespace Application.Manager
                     var prod = await _productService.SaveProduct(productvm.Product);
                     if (prod.ProductID > 0)
                     {
-                        foreach(var item in productvm.ImageList)
+                        if (productvm.ImageList.Count()>0)
                         {
-                            Image img = new Image();
-                            img.ProductID = prod.ProductID;
-                            img.ImageName = item.ImageName;
-                            
-                            lstImage.Add(img);
+                            foreach (var item in productvm.ImageList)
+                            {
+                                Image img = new Image();
+                                img.ProductID = prod.ProductID;
+                                img.ImageName = item.ImageName;
+
+                                lstImage.Add(img);
+                            }
+                            await _productService.SaveImages(lstImage);
                         }
-                        await _productService.SaveImages(lstImage);
+                        
                         responseMessage.Message = "Product Saved Successfully";
                         responseMessage.ResponseObj = prod;
                         responseMessage.ResponseCode = 200;
@@ -69,7 +73,7 @@ namespace Application.Manager
         public async Task<ResponseMessage> GetProductList()
         {
             ResponseMessage responseMessage = new ResponseMessage();
-            List<Product> lstProduct = new List<Product>();
+            List<vmSaveProduct> lstProduct = new List<vmSaveProduct>();
             try
             {
                 lstProduct=await _productService.GetProductList();
@@ -101,7 +105,7 @@ namespace Application.Manager
             
             try
             {
-                var product=_productService.GetProductByID(productID);
+                vmSaveProduct product =await _productService.GetProductByID(productID);
                 if(product!= null)
                 {
                     responseMessage.ResponseObj = product;

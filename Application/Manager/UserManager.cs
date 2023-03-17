@@ -89,7 +89,7 @@ namespace Application.Manager
 
             try
             {
-                var user = _userService.GetUserByID(userID);
+                var user = await _userService.GetUserByID(userID);
                 if (user != null)
                 {
                     responseMessage.ResponseObj = user;
@@ -111,6 +111,11 @@ namespace Application.Manager
 
             return responseMessage;
         }
+
+        public async Task<bool> AuthenticateUserAsync(string email, string password)
+        {
+            return await _userService.AuthenticateUserLogin(email, password);
+        }
     }
 
     public interface IUserManager
@@ -118,5 +123,6 @@ namespace Application.Manager
         Task<ResponseMessage> SaveUser(User user);
         Task<ResponseMessage> GetUserList();
         Task<ResponseMessage> GetUserbyID(long userID);
+        Task<bool> AuthenticateUserAsync(string email, string password);
     }
 }

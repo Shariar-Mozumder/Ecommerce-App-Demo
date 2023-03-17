@@ -63,7 +63,7 @@ namespace Application.Service
             {
                 if (userID > 0)
                 {
-                    user = _context.User.Where(x => x.UserID == userID).FirstOrDefault();
+                    user =  _context.User.Where(x => x.UserID == userID).FirstOrDefault();
                 }
             }
             catch (Exception ex)
@@ -74,6 +74,27 @@ namespace Application.Service
 
             return user;
         }
+
+        public async Task<bool> AuthenticateUserLogin(string email, string password)
+        {
+            try
+            {
+                var user=_context.User.Where(x => x.Email==email && x.Password==password).FirstOrDefault();
+                if (user!=null)
+                {
+                    return true;
+                }
+                
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+
+            return false;
+            
+        }
     }
 
     public interface IUserService
@@ -81,5 +102,6 @@ namespace Application.Service
         public Task<User> SaveUser(User user);
         public Task<List<User>> GetUserList();
         public  Task<User> GetUserByID(long userID);
+        public Task<bool> AuthenticateUserLogin(string email, string password);
     }
 }

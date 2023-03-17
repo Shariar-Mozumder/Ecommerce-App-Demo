@@ -1,4 +1,5 @@
-﻿using Domain;
+﻿using Application.Utility.VMs;
+using Domain;
 using Infrastructure;
 using System;
 using System.Collections.Generic;
@@ -41,13 +42,21 @@ namespace Application.Service
             return product;
         }
 
-        public async Task<List<Product>> GetProductList()
+        public async Task<List<vmSaveProduct>> GetProductList()
         {
-            List<Product> products = new List<Product>();
+            List<vmSaveProduct> lstproduct = new List<vmSaveProduct>();
             try
             {
-                products = _context.Product.ToList();
-                var check = products;
+                  
+
+                lstproduct=_context.Product
+                            .Select(p => new vmSaveProduct
+                            {
+                            Product = p,
+                            ImageList = _context.Image.Where(i => i.ProductID == p.ProductID).ToList()
+                                })
+                            .ToList();
+
             }
             catch (Exception ex)
             {
@@ -55,17 +64,24 @@ namespace Application.Service
                 throw ex;
             }
 
-            return products;
+            return lstproduct;
         }
 
-        public async Task<Product> GetProductByID(long productID)
+        public async Task<vmSaveProduct> GetProductByID(long productID)
         {
-            Product product = new Product();
+            vmSaveProduct product = new vmSaveProduct();
             try
             {
                 if (productID > 0)
                 {
-                    product = _context.Product.Where(x => x.ProductID == productID).FirstOrDefault();
+                    //product = _context.Product.Where(x => x.ProductID == productID).FirstOrDefault();
+                    product= _context.Product
+                            .Where(p => p.ProductID == productID)
+                            .Select(p => new vmSaveProduct
+                            {
+                                Product = p,
+                                ImageList = _context.Image.Where(i => i.ProductID == p.ProductID).ToList()
+                            }).FirstOrDefault();
                 }
             }
             catch (Exception ex)
@@ -97,8 +113,8 @@ namespace Application.Service
     public interface IProductService
     {
         public Task<Product> SaveProduct(Product product);
-        public Task<List<Product>> GetProductList();
-        public Task<Product> GetProductByID(long productID);
+        public Task<List<vmSaveProduct>> GetProductList();
+        public Task<vmSaveProduct> GetProductByID(long productID);
         public Task<int> SaveImages(List<Image> images);
     }
 }
