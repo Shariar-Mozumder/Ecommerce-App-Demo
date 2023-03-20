@@ -1,41 +1,46 @@
 <div class="product-upload">
   <h2>Upload Product</h2>
-  <form action="/upload" method="post" enctype="multipart/form-data">
+  <form  [formGroup]="productForm" (ngSubmit)="onSubmit">
     <div class="form-group">
       <label for="product-name">Product Name:</label>
-      <input type="text" id="product-name" name="product-name" required>
+      <input type="text" id="product-name" formControlName="productName" name="product-name" required>
     </div>
 
     <div class="form-group">
       <label for="quantity">Quantity:</label>
-      <input type="number" id="quantity" name="quantity" required>
+      <input type="number" id="quantity" formControlName="quantity" name="quantity" required>
     </div>
 
     <div class="form-group">
       <label for="discount-percent">Discount Percent:</label>
-      <input type="number" id="discount-percent" name="discount-percent" required>
+      <input type="number" id="discount-percent" formControlName="discountPercent" name="discount-percent" required>
     </div>
 
     <div class="form-group">
       <label for="base-price">Base Price:</label>
-      <input type="number" id="base-price" name="base-price" step="0.01" required>
+      <input type="number" id="base-price" formControlName="basePrice" name="base-price" step="0.01" required>
     </div>
 
     <div class="form-group">
       <label for="discount-price">Discount Price:</label>
-      <input type="number" id="discount-price" name="discount-price" step="0.01" required>
+      <input type="number" id="discount-price" formControlName="discountPrice" name="discount-price" step="0.01" required>
     </div>
 
     <div class="form-group">
       <label for="description">Description:</label>
-      <textarea id="description" name="description" required></textarea>
+      <textarea id="description" formControlName="description" name="description" required></textarea>
     </div>
 
     <div class="form-group">
       <label for="images">Images:</label>
-      <input type="file" id="images" name="images[]" multiple accept="image/*" required>
+      <!-- <input type="file" id="images" formControlName="imageName" name="images[]" multiple accept="image/*" required> -->
+      <input type='file' (change)="onSelectFile($event)" multiple>
+
+      <div >
+        <img *ngFor='let url of urls'  [src]="url" style="height:50px;width:50px">
+      </div>
     </div>
 
-    <button type="submit">Upload Product</button>
+    <button type="submit" (click)="onSubmit()">Upload Product</button>
   </form>
 </div>

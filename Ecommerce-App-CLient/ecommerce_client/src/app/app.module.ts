@@ -13,6 +13,7 @@ import { AuthGuard } from './services/auth-services/authGuard';
 import { AuthService } from './services/auth-services/AuthService';
 import { ProductlistComponent } from './modules/product-module/productlist/productlist.component';
 import { AddproductComponent } from './modules/product-module/addproduct/addproduct.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { AddproductComponent } from './modules/product-module/addproduct/addprod
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [AuthGuard,AuthService],
   bootstrap: [AppComponent]

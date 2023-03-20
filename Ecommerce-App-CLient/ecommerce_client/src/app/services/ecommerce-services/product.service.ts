@@ -14,12 +14,12 @@ export class ProductService {
 
   readonly rootURL = 'https://localhost:44306/api/';
 
-  private apiURL = 'http://your-api-url.com/products'; // Replace with your API endpoint URL
+  private apiURL = 'https://localhost:7058/api/product/'; // Replace with your API endpoint URL
 
 
-  // addProduct(vmSaveProduct: VmSaveProduct): Observable<any> {
-  //   return this.httpClient.post(this.apiURL, vmSaveProduct);
-  // }
+  addProduct(vmSaveProduct: any): Observable<any> {
+    return this.httpClient.post(this.apiURL+'SaveOrUpdateProduct', vmSaveProduct);
+  }
   // postAttendance(formData) {
   //   return this.httpClient.post(this.rootURL + 'Attendance/PostAttendance', formData);
   // }
