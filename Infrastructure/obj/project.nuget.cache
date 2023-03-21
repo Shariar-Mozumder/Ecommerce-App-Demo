@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wm+HllFJe9SCSVRBuymNUpUA1FZkfz3gzRMMBQoQwAaYeZTlyYiLKpbI7GEMlQQpMBKf70+XFa7uo1R0J4sAyw==",
+  "dgSpecHash": "j6LWXg0FJBoky0Oij3SaQBhRnX2Qvti/XjrNdy6w/NvxoLPCdb1KNVA1mClEhBFMU4Qfz2P+rt+aMo71QHxRsA==",
   "success": true,
-  "projectFilePath": "D:\\Asp.Net\\OmnivarityProject\\Ecommerce Demo\\Ecommerce-App-Demo\\Infrastructure\\Infrastructure.csproj",
+  "projectFilePath": "D:\\Asp.Net\\OmnivarityProject\\Ecommerce latest\\Ecommerce-App-Demo\\Infrastructure\\Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ShariarPC\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\ShariarPC\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

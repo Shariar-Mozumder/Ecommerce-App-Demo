@@ -5437,11 +5437,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Asp.Net\\OmnivarityProject\\Ecommerce Demo\\Ecommerce-App-Demo\\Domain\\Domain.csproj",
+      "projectUniqueName": "D:\\Asp.Net\\OmnivarityProject\\Ecommerce latest\\Ecommerce-App-Demo\\Domain\\Domain.csproj",
       "projectName": "Domain",
-      "projectPath": "D:\\Asp.Net\\OmnivarityProject\\Ecommerce Demo\\Ecommerce-App-Demo\\Domain\\Domain.csproj",
+      "projectPath": "D:\\Asp.Net\\OmnivarityProject\\Ecommerce latest\\Ecommerce-App-Demo\\Domain\\Domain.csproj",
       "packagesPath": "C:\\Users\\ShariarPC\\.nuget\\packages\\",
-      "outputPath": "D:\\Asp.Net\\OmnivarityProject\\Ecommerce Demo\\Ecommerce-App-Demo\\Domain\\obj\\",
+      "outputPath": "D:\\Asp.Net\\OmnivarityProject\\Ecommerce latest\\Ecommerce-App-Demo\\Domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ShariarPC\\AppData\\Roaming\\NuGet\\NuGet.Config",

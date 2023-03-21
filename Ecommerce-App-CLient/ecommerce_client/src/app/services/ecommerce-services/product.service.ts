@@ -12,7 +12,6 @@ export class ProductService {
   constructor(private httpClient: HttpClient) {
   }
 
-  readonly rootURL = 'https://localhost:44306/api/';
 
   private apiURL = 'https://localhost:7058/api/product/'; // Replace with your API endpoint URL
 
@@ -20,6 +19,15 @@ export class ProductService {
   addProduct(vmSaveProduct: any): Observable<any> {
     return this.httpClient.post(this.apiURL+'SaveOrUpdateProduct', vmSaveProduct);
   }
+
+  getProductForCard(): Observable<any> {
+    return this.httpClient.get(this.apiURL+'GetProductList');
+  }
+
+  getProductById(obj:any): Observable<any> {
+    return this.httpClient.post(this.apiURL+'GetProductByID',obj);
+  }
+
   // postAttendance(formData) {
   //   return this.httpClient.post(this.rootURL + 'Attendance/PostAttendance', formData);
   // }

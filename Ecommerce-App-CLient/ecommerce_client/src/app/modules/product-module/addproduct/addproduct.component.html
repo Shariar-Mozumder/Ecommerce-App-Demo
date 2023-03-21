@@ -1,6 +1,6 @@
 <div class="product-upload">
   <h2>Upload Product</h2>
-  <form  [formGroup]="productForm" (ngSubmit)="onSubmit">
+  <form  [formGroup]="productForm" (ngSubmit)="saveOrUpdate">
     <div class="form-group">
       <label for="product-name">Product Name:</label>
       <input type="text" id="product-name" formControlName="productName" name="product-name" required>
@@ -41,6 +41,6 @@
       </div>
     </div>
 
-    <button type="submit" (click)="onSubmit()">Upload Product</button>
+    <button type="submit" (click)="saveOrUpdate()">Upload Product</button>
   </form>
 </div>

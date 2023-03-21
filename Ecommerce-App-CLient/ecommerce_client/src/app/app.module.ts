@@ -14,6 +14,9 @@ import { AuthService } from './services/auth-services/AuthService';
 import { ProductlistComponent } from './modules/product-module/productlist/productlist.component';
 import { AddproductComponent } from './modules/product-module/addproduct/addproduct.component';
 import { HttpClientModule } from '@angular/common/http';
+import { CmsProductComponent } from './modules/product-module/cms-product/cms-product.component';
+import { UserlistComponent } from './modules/user-module/userlist/userlist.component';
+import { AddUserComponent } from './modules/user-module/add-user/add-user.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,10 @@ import { HttpClientModule } from '@angular/common/http';
     DemoComponent,
     LoginComponent,
     ProductlistComponent,
-    AddproductComponent
+    AddproductComponent,
+    CmsProductComponent,
+    UserlistComponent,
+    AddUserComponent
   ],
   imports: [
     BrowserModule,

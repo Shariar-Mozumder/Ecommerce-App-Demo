@@ -138,7 +138,7 @@ namespace Ecommerce.Controllers
             return responseMessage;
         }
 
-        [Authorize(AuthenticationSchemes = Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerDefaults.AuthenticationScheme)]
+        //[Authorize(AuthenticationSchemes = Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerDefaults.AuthenticationScheme)]
         [HttpPost]
         [Route("GetUserByID")]
         public async Task<ResponseMessage> GetUserByID(RequestMessage requestMessage)

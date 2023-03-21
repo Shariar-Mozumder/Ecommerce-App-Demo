@@ -24,10 +24,11 @@ namespace Ecommerce.Controllers
         [Route("SaveOrUpdateProduct")]
         public async Task<ResponseMessage> SaveProduct(RequestMessage requestMessage)
         {
-            vmSaveProduct productvm =JsonConvert.DeserializeObject<vmSaveProduct>(requestMessage.RequestObj.ToString());
             ResponseMessage responseMessage = new ResponseMessage();
             try
             {
+                vmSaveProduct productvm = JsonConvert.DeserializeObject<vmSaveProduct>(requestMessage.RequestObj.ToString());
+               
                 responseMessage = await _productManager.SaveProduct(productvm);
 
             }

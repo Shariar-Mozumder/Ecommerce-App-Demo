@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WX8jhWlHtqCzz9HhYvqt8uNLbmHxH4h51U09z8u1U6hhGyWd3iLEdGMEmmb93RKbWb6oVeDzrPwGPQLVGlzE0g==",
+  "dgSpecHash": "gt775bi6YbT9VteFPkI5X8fQUSWmU0iowswRpd786JC/rL8dlNxiZtY0KuAHurcBbWOA1mvv90KZFTXdEMbJvQ==",
   "success": true,
-  "projectFilePath": "D:\\Asp.Net\\OmnivarityProject\\Ecommerce Demo\\Ecommerce-App-Demo\\Domain\\Domain.csproj",
+  "projectFilePath": "D:\\Asp.Net\\OmnivarityProject\\Ecommerce latest\\Ecommerce-App-Demo\\Domain\\Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ShariarPC\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.9\\microsoft.aspnet.webapi.client.5.2.9.nupkg.sha512",
     "C:\\Users\\ShariarPC\\.nuget\\packages\\microsoft.aspnet.webapi.core\\5.2.9\\microsoft.aspnet.webapi.core.5.2.9.nupkg.sha512",

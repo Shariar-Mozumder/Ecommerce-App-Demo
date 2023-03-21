@@ -6,10 +6,10 @@
           <div class="card bg-white shadow-lg">
             <div class="card-body p-5">
               <form class="mb-3 mt-md-4" [formGroup]="form" (ngSubmit)="onSubmit()">
-                <h2 class="fw-bold mb-2 text-uppercase ">Ecommerce</h2>
-                <p class=" mb-5">Please enter your login and password!</p>
+                <h2 class="fw-bold mb-2 text-uppercase ">Omni commerce</h2>
+                <p class=" mb-5">Please enter your Email and password!</p>
                 <div class="mb-3">
-                  <label for="email" class="form-label ">Email address</label>
+                  <label for="email" class="form-label ">Email</label>
                   <input type="email" class="form-control" id="email" formControlName="userName" placeholder="name@example.com">
                 </div>
                 <div class="mb-3">
@@ -18,7 +18,7 @@
                 </div>
                 <p class="small"><a class="text-primary" href="forget-password.html">Forgot password?</a></p>
                 <div class="d-grid">
-                  <button class="btn btn-outline-dark" type="submit" routerLink="/demo">Login</button>
+                  <button class="btn btn-outline-dark" type="submit" routerLink="product-list">Login</button>
                 </div>
               </form>
               <div>
@@ -26,7 +26,7 @@
                     class="text-primary fw-bold">Sign
                     Up</a></p>
               </div>
-  
+
             </div>
           </div>
         </div>

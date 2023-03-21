@@ -34,3 +34,27 @@ D:\Asp.Net\OmnivarityProject\Ecommerce Demo\Ecommerce-App-Demo\Domain\obj\Debug\
 D:\Asp.Net\OmnivarityProject\Ecommerce Demo\Ecommerce-App-Demo\Domain\obj\Debug\net6.0\refint\Domain.dll
 D:\Asp.Net\OmnivarityProject\Ecommerce Demo\Ecommerce-App-Demo\Domain\obj\Debug\net6.0\Domain.pdb
 D:\Asp.Net\OmnivarityProject\Ecommerce Demo\Ecommerce-App-Demo\Domain\obj\Debug\net6.0\ref\Domain.dll
+E:\Shariar\Ecommerce-App-Demo\Domain\bin\Debug\net6.0\Domain.deps.json
+E:\Shariar\Ecommerce-App-Demo\Domain\bin\Debug\net6.0\Domain.dll
+E:\Shariar\Ecommerce-App-Demo\Domain\bin\Debug\net6.0\Domain.pdb
+E:\Shariar\Ecommerce-App-Demo\Domain\obj\Debug\net6.0\Domain.csproj.AssemblyReference.cache
+E:\Shariar\Ecommerce-App-Demo\Domain\obj\Debug\net6.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+E:\Shariar\Ecommerce-App-Demo\Domain\obj\Debug\net6.0\Domain.AssemblyInfoInputs.cache
+E:\Shariar\Ecommerce-App-Demo\Domain\obj\Debug\net6.0\Domain.AssemblyInfo.cs
+E:\Shariar\Ecommerce-App-Demo\Domain\obj\Debug\net6.0\Domain.csproj.CoreCompileInputs.cache
+E:\Shariar\Ecommerce-App-Demo\Domain\obj\Debug\net6.0\Domain.dll
+E:\Shariar\Ecommerce-App-Demo\Domain\obj\Debug\net6.0\refint\Domain.dll
+E:\Shariar\Ecommerce-App-Demo\Domain\obj\Debug\net6.0\Domain.pdb
+E:\Shariar\Ecommerce-App-Demo\Domain\obj\Debug\net6.0\ref\Domain.dll
+D:\Asp.Net\OmnivarityProject\Ecommerce latest\Ecommerce-App-Demo\Domain\bin\Debug\net6.0\Domain.deps.json
+D:\Asp.Net\OmnivarityProject\Ecommerce latest\Ecommerce-App-Demo\Domain\bin\Debug\net6.0\Domain.dll
+D:\Asp.Net\OmnivarityProject\Ecommerce latest\Ecommerce-App-Demo\Domain\bin\Debug\net6.0\Domain.pdb
+D:\Asp.Net\OmnivarityProject\Ecommerce latest\Ecommerce-App-Demo\Domain\obj\Debug\net6.0\Domain.csproj.AssemblyReference.cache
+D:\Asp.Net\OmnivarityProject\Ecommerce latest\Ecommerce-App-Demo\Domain\obj\Debug\net6.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Asp.Net\OmnivarityProject\Ecommerce latest\Ecommerce-App-Demo\Domain\obj\Debug\net6.0\Domain.AssemblyInfoInputs.cache
+D:\Asp.Net\OmnivarityProject\Ecommerce latest\Ecommerce-App-Demo\Domain\obj\Debug\net6.0\Domain.AssemblyInfo.cs
+D:\Asp.Net\OmnivarityProject\Ecommerce latest\Ecommerce-App-Demo\Domain\obj\Debug\net6.0\Domain.csproj.CoreCompileInputs.cache
+D:\Asp.Net\OmnivarityProject\Ecommerce latest\Ecommerce-App-Demo\Domain\obj\Debug\net6.0\Domain.dll
+D:\Asp.Net\OmnivarityProject\Ecommerce latest\Ecommerce-App-Demo\Domain\obj\Debug\net6.0\refint\Domain.dll
+D:\Asp.Net\OmnivarityProject\Ecommerce latest\Ecommerce-App-Demo\Domain\obj\Debug\net6.0\Domain.pdb
+D:\Asp.Net\OmnivarityProject\Ecommerce latest\Ecommerce-App-Demo\Domain\obj\Debug\net6.0\ref\Domain.dll

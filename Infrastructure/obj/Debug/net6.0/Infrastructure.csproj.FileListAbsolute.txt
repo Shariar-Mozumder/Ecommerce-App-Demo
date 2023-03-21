@@ -49,3 +49,37 @@ D:\Asp.Net\OmnivarityProject\Ecommerce Demo\Ecommerce-App-Demo\Infrastructure\ob
 D:\Asp.Net\OmnivarityProject\Ecommerce Demo\Ecommerce-App-Demo\Infrastructure\obj\Debug\net6.0\Infrastructure.pdb
 D:\Asp.Net\OmnivarityProject\Ecommerce Demo\Ecommerce-App-Demo\Infrastructure\obj\Debug\net6.0\Infrastructure.genruntimeconfig.cache
 D:\Asp.Net\OmnivarityProject\Ecommerce Demo\Ecommerce-App-Demo\Infrastructure\obj\Debug\net6.0\ref\Infrastructure.dll
+E:\Shariar\Ecommerce-App-Demo\Infrastructure\bin\Debug\net6.0\Infrastructure.deps.json
+E:\Shariar\Ecommerce-App-Demo\Infrastructure\bin\Debug\net6.0\Infrastructure.runtimeconfig.json
+E:\Shariar\Ecommerce-App-Demo\Infrastructure\bin\Debug\net6.0\Infrastructure.dll
+E:\Shariar\Ecommerce-App-Demo\Infrastructure\bin\Debug\net6.0\Infrastructure.pdb
+E:\Shariar\Ecommerce-App-Demo\Infrastructure\bin\Debug\net6.0\Domain.dll
+E:\Shariar\Ecommerce-App-Demo\Infrastructure\bin\Debug\net6.0\Domain.pdb
+E:\Shariar\Ecommerce-App-Demo\Infrastructure\obj\Debug\net6.0\Infrastructure.csproj.AssemblyReference.cache
+E:\Shariar\Ecommerce-App-Demo\Infrastructure\obj\Debug\net6.0\Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+E:\Shariar\Ecommerce-App-Demo\Infrastructure\obj\Debug\net6.0\Infrastructure.AssemblyInfoInputs.cache
+E:\Shariar\Ecommerce-App-Demo\Infrastructure\obj\Debug\net6.0\Infrastructure.AssemblyInfo.cs
+E:\Shariar\Ecommerce-App-Demo\Infrastructure\obj\Debug\net6.0\Infrastructure.csproj.CoreCompileInputs.cache
+E:\Shariar\Ecommerce-App-Demo\Infrastructure\obj\Debug\net6.0\Infrastructure.csproj.CopyComplete
+E:\Shariar\Ecommerce-App-Demo\Infrastructure\obj\Debug\net6.0\Infrastructure.dll
+E:\Shariar\Ecommerce-App-Demo\Infrastructure\obj\Debug\net6.0\refint\Infrastructure.dll
+E:\Shariar\Ecommerce-App-Demo\Infrastructure\obj\Debug\net6.0\Infrastructure.pdb
+E:\Shariar\Ecommerce-App-Demo\Infrastructure\obj\Debug\net6.0\Infrastructure.genruntimeconfig.cache
+E:\Shariar\Ecommerce-App-Demo\Infrastructure\obj\Debug\net6.0\ref\Infrastructure.dll
+D:\Asp.Net\OmnivarityProject\Ecommerce latest\Ecommerce-App-Demo\Infrastructure\bin\Debug\net6.0\Infrastructure.deps.json
+D:\Asp.Net\OmnivarityProject\Ecommerce latest\Ecommerce-App-Demo\Infrastructure\bin\Debug\net6.0\Infrastructure.runtimeconfig.json
+D:\Asp.Net\OmnivarityProject\Ecommerce latest\Ecommerce-App-Demo\Infrastructure\bin\Debug\net6.0\Infrastructure.dll
+D:\Asp.Net\OmnivarityProject\Ecommerce latest\Ecommerce-App-Demo\Infrastructure\bin\Debug\net6.0\Infrastructure.pdb
+D:\Asp.Net\OmnivarityProject\Ecommerce latest\Ecommerce-App-Demo\Infrastructure\bin\Debug\net6.0\Domain.dll
+D:\Asp.Net\OmnivarityProject\Ecommerce latest\Ecommerce-App-Demo\Infrastructure\bin\Debug\net6.0\Domain.pdb
+D:\Asp.Net\OmnivarityProject\Ecommerce latest\Ecommerce-App-Demo\Infrastructure\obj\Debug\net6.0\Infrastructure.csproj.AssemblyReference.cache
+D:\Asp.Net\OmnivarityProject\Ecommerce latest\Ecommerce-App-Demo\Infrastructure\obj\Debug\net6.0\Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\Asp.Net\OmnivarityProject\Ecommerce latest\Ecommerce-App-Demo\Infrastructure\obj\Debug\net6.0\Infrastructure.AssemblyInfoInputs.cache
+D:\Asp.Net\OmnivarityProject\Ecommerce latest\Ecommerce-App-Demo\Infrastructure\obj\Debug\net6.0\Infrastructure.AssemblyInfo.cs
+D:\Asp.Net\OmnivarityProject\Ecommerce latest\Ecommerce-App-Demo\Infrastructure\obj\Debug\net6.0\Infrastructure.csproj.CoreCompileInputs.cache
+D:\Asp.Net\OmnivarityProject\Ecommerce latest\Ecommerce-App-Demo\Infrastructure\obj\Debug\net6.0\Infrastructure.csproj.CopyComplete
+D:\Asp.Net\OmnivarityProject\Ecommerce latest\Ecommerce-App-Demo\Infrastructure\obj\Debug\net6.0\Infrastructure.dll
+D:\Asp.Net\OmnivarityProject\Ecommerce latest\Ecommerce-App-Demo\Infrastructure\obj\Debug\net6.0\refint\Infrastructure.dll
+D:\Asp.Net\OmnivarityProject\Ecommerce latest\Ecommerce-App-Demo\Infrastructure\obj\Debug\net6.0\Infrastructure.pdb
+D:\Asp.Net\OmnivarityProject\Ecommerce latest\Ecommerce-App-Demo\Infrastructure\obj\Debug\net6.0\Infrastructure.genruntimeconfig.cache
+D:\Asp.Net\OmnivarityProject\Ecommerce latest\Ecommerce-App-Demo\Infrastructure\obj\Debug\net6.0\ref\Infrastructure.dll

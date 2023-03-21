@@ -1,4 +1,9 @@
 export interface User {
-    userName: string;
+    UserID : Number;
+    FirstName: string;
+    LastName: string;
+    Email: string;
+    Gender: string;
+    IsAdmin: boolean;
     password: string;
   }

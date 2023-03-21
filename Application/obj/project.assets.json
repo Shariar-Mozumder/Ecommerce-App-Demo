@@ -7417,11 +7417,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Asp.Net\\OmnivarityProject\\Ecommerce Demo\\Ecommerce-App-Demo\\Application\\Application.csproj",
+      "projectUniqueName": "D:\\Asp.Net\\OmnivarityProject\\Ecommerce latest\\Ecommerce-App-Demo\\Application\\Application.csproj",
       "projectName": "Application",
-      "projectPath": "D:\\Asp.Net\\OmnivarityProject\\Ecommerce Demo\\Ecommerce-App-Demo\\Application\\Application.csproj",
+      "projectPath": "D:\\Asp.Net\\OmnivarityProject\\Ecommerce latest\\Ecommerce-App-Demo\\Application\\Application.csproj",
       "packagesPath": "C:\\Users\\ShariarPC\\.nuget\\packages\\",
-      "outputPath": "D:\\Asp.Net\\OmnivarityProject\\Ecommerce Demo\\Ecommerce-App-Demo\\Application\\obj\\",
+      "outputPath": "D:\\Asp.Net\\OmnivarityProject\\Ecommerce latest\\Ecommerce-App-Demo\\Application\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ShariarPC\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -7438,8 +7438,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\Asp.Net\\OmnivarityProject\\Ecommerce Demo\\Ecommerce-App-Demo\\Infrastructure\\Infrastructure.csproj": {
-              "projectPath": "D:\\Asp.Net\\OmnivarityProject\\Ecommerce Demo\\Ecommerce-App-Demo\\Infrastructure\\Infrastructure.csproj"
+            "D:\\Asp.Net\\OmnivarityProject\\Ecommerce latest\\Ecommerce-App-Demo\\Infrastructure\\Infrastructure.csproj": {
+              "projectPath": "D:\\Asp.Net\\OmnivarityProject\\Ecommerce latest\\Ecommerce-App-Demo\\Infrastructure\\Infrastructure.csproj"
             }
           }
         }
