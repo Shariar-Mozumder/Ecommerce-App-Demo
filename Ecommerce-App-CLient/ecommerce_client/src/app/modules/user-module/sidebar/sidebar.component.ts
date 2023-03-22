@@ -9,11 +9,16 @@ import { AuthService } from 'src/app/services/auth-services/AuthService';
 })
 export class SidebarComponent {
   isLoggedIn$!: Observable<boolean>;
+  isAdmin:any;
 
   constructor(private authService: AuthService) { }
 
   ngOnInit() {
+    let user:any = localStorage.getItem('User');
+    const users = JSON.parse(user);
     this.isLoggedIn$ = this.authService.isLoggedIn;
+    this.isAdmin = users.isAdmin;
+    debugger
   }
 
   onLogout() {

@@ -112,6 +112,35 @@ namespace Application.Manager
             return responseMessage;
         }
 
+        public async Task<ResponseMessage> GetUserbyEmail(string email)
+        {
+            ResponseMessage responseMessage = new ResponseMessage();
+
+            try
+            {
+                var user = await _userService.GetUserbyEmail(email);
+                if (user != null)
+                {
+                    responseMessage.ResponseObj = user;
+                    responseMessage.ResponseCode = 200;
+                    responseMessage.Message = "Get User Successfully.";
+                }
+                else
+                {
+                    responseMessage.ResponseCode = 200;
+                    responseMessage.Message = "No Data Found.";
+                }
+
+            }
+            catch (Exception ex)
+            {
+                responseMessage.Message = ex.Message.ToString();
+                responseMessage.ResponseCode = 500;
+            }
+
+            return responseMessage;
+        }
+
         public async Task<bool> AuthenticateUserAsync(string email, string password)
         {
             return await _userService.AuthenticateUserLogin(email, password);
@@ -124,5 +153,6 @@ namespace Application.Manager
         Task<ResponseMessage> GetUserList();
         Task<ResponseMessage> GetUserbyID(long userID);
         Task<bool> AuthenticateUserAsync(string email, string password);
+        Task<ResponseMessage> GetUserbyEmail(string email);
     }
 }

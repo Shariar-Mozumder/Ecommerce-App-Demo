@@ -10,16 +10,17 @@ export class AuthService {
 
   get isLoggedIn() {
     return this.loggedIn.asObservable(); // {2}
+
   }
 
   constructor(
     private router: Router
   ) {}
 
-  login(user: User){
-    if (user.Email !== '' && user.password !== '' ) { // {3}
+  loginAuth(verdict: boolean){
+    if (verdict==true ) { // {3}
       this.loggedIn.next(true);
-      this.router.navigate(['/demo']);
+      this.router.navigate(['/product-list']);
     }
   }
 

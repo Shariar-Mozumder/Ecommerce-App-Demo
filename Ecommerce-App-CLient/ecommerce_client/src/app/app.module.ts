@@ -17,6 +17,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { CmsProductComponent } from './modules/product-module/cms-product/cms-product.component';
 import { UserlistComponent } from './modules/user-module/userlist/userlist.component';
 import { AddUserComponent } from './modules/user-module/add-user/add-user.component';
+import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { AddUserComponent } from './modules/user-module/add-user/add-user.compon
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ToastrModule.forRoot(), // ToastrModule added
   ],
   providers: [AuthGuard,AuthService],
   bootstrap: [AppComponent]

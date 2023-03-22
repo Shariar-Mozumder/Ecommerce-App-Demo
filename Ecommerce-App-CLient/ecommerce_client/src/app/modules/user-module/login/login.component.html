@@ -10,7 +10,7 @@
                 <p class=" mb-5">Please enter your Email and password!</p>
                 <div class="mb-3">
                   <label for="email" class="form-label ">Email</label>
-                  <input type="email" class="form-control" id="email" formControlName="userName" placeholder="name@example.com">
+                  <input type="email" class="form-control" id="email" formControlName="email" placeholder="name@example.com">
                 </div>
                 <div class="mb-3">
                   <label for="password" class="form-label ">Password</label>
@@ -18,7 +18,7 @@
                 </div>
                 <p class="small"><a class="text-primary" href="forget-password.html">Forgot password?</a></p>
                 <div class="d-grid">
-                  <button class="btn btn-outline-dark" type="submit" routerLink="product-list">Login</button>
+                  <button class="btn btn-outline-dark" type="submit" (click)="onSubmit()" >Login</button>
                 </div>
               </form>
               <div>

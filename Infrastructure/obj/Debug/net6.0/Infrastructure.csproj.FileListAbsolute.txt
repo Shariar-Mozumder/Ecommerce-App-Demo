@@ -83,3 +83,20 @@ D:\Asp.Net\OmnivarityProject\Ecommerce latest\Ecommerce-App-Demo\Infrastructure\
 D:\Asp.Net\OmnivarityProject\Ecommerce latest\Ecommerce-App-Demo\Infrastructure\obj\Debug\net6.0\Infrastructure.pdb
 D:\Asp.Net\OmnivarityProject\Ecommerce latest\Ecommerce-App-Demo\Infrastructure\obj\Debug\net6.0\Infrastructure.genruntimeconfig.cache
 D:\Asp.Net\OmnivarityProject\Ecommerce latest\Ecommerce-App-Demo\Infrastructure\obj\Debug\net6.0\ref\Infrastructure.dll
+D:\Shariar\Shariar\EcomAPI\Latest2\Ecommerce-App-Demo\Infrastructure\bin\Debug\net6.0\Infrastructure.deps.json
+D:\Shariar\Shariar\EcomAPI\Latest2\Ecommerce-App-Demo\Infrastructure\bin\Debug\net6.0\Infrastructure.runtimeconfig.json
+D:\Shariar\Shariar\EcomAPI\Latest2\Ecommerce-App-Demo\Infrastructure\bin\Debug\net6.0\Infrastructure.dll
+D:\Shariar\Shariar\EcomAPI\Latest2\Ecommerce-App-Demo\Infrastructure\bin\Debug\net6.0\Infrastructure.pdb
+D:\Shariar\Shariar\EcomAPI\Latest2\Ecommerce-App-Demo\Infrastructure\bin\Debug\net6.0\Domain.dll
+D:\Shariar\Shariar\EcomAPI\Latest2\Ecommerce-App-Demo\Infrastructure\bin\Debug\net6.0\Domain.pdb
+D:\Shariar\Shariar\EcomAPI\Latest2\Ecommerce-App-Demo\Infrastructure\obj\Debug\net6.0\Infrastructure.csproj.AssemblyReference.cache
+D:\Shariar\Shariar\EcomAPI\Latest2\Ecommerce-App-Demo\Infrastructure\obj\Debug\net6.0\Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\Shariar\Shariar\EcomAPI\Latest2\Ecommerce-App-Demo\Infrastructure\obj\Debug\net6.0\Infrastructure.AssemblyInfoInputs.cache
+D:\Shariar\Shariar\EcomAPI\Latest2\Ecommerce-App-Demo\Infrastructure\obj\Debug\net6.0\Infrastructure.AssemblyInfo.cs
+D:\Shariar\Shariar\EcomAPI\Latest2\Ecommerce-App-Demo\Infrastructure\obj\Debug\net6.0\Infrastructure.csproj.CoreCompileInputs.cache
+D:\Shariar\Shariar\EcomAPI\Latest2\Ecommerce-App-Demo\Infrastructure\obj\Debug\net6.0\Infrastructure.csproj.CopyComplete
+D:\Shariar\Shariar\EcomAPI\Latest2\Ecommerce-App-Demo\Infrastructure\obj\Debug\net6.0\Infrastructure.dll
+D:\Shariar\Shariar\EcomAPI\Latest2\Ecommerce-App-Demo\Infrastructure\obj\Debug\net6.0\refint\Infrastructure.dll
+D:\Shariar\Shariar\EcomAPI\Latest2\Ecommerce-App-Demo\Infrastructure\obj\Debug\net6.0\Infrastructure.pdb
+D:\Shariar\Shariar\EcomAPI\Latest2\Ecommerce-App-Demo\Infrastructure\obj\Debug\net6.0\Infrastructure.genruntimeconfig.cache
+D:\Shariar\Shariar\EcomAPI\Latest2\Ecommerce-App-Demo\Infrastructure\obj\Debug\net6.0\ref\Infrastructure.dll

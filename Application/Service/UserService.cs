@@ -23,13 +23,28 @@ namespace Application.Service
             {
                 if (user.UserID > 0)
                 {
+                    var existedUser = _context.User.Where(x => x.Email == user.Email).FirstOrDefault();
+                    if(existedUser.UserID!=user.UserID && existedUser.Email == user.Email)
+                    {
+                        return user;
+                    }
                     _context.User.Update(user);
                     var isUpdated = _context.SaveChangesAsync();
                 }
                 else
                 {
-                    await _context.User.AddAsync(user);
-                    var isAdded = _context.SaveChanges();
+                    if(user.Email!= null)
+                    {
+                        var existedUser = _context.User.Where(x => x.Email == user.Email).FirstOrDefault();
+                        if (existedUser != null)
+                        {
+                            return user;
+                        }
+                        await _context.User.AddAsync(user);
+                        var isAdded = _context.SaveChanges();
+
+                    }
+                    
                 }
             }
             catch (Exception ex)
@@ -95,6 +110,25 @@ namespace Application.Service
             return false;
             
         }
+
+        public async Task<User> GetUserbyEmail(string email)
+        {
+            User user = new User();
+            try
+            {
+                if (!string.IsNullOrEmpty(email))
+                {
+                    user = _context.User.Where(x => x.Email == email).FirstOrDefault();
+                }
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+
+            return user;
+        }
     }
 
     public interface IUserService
@@ -103,5 +137,6 @@ namespace Application.Service
         public Task<List<User>> GetUserList();
         public  Task<User> GetUserByID(long userID);
         public Task<bool> AuthenticateUserLogin(string email, string password);
+        public Task<User> GetUserbyEmail(string email);
     }
 }

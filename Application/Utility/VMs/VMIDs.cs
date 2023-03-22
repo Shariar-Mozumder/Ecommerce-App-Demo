@@ -9,5 +9,6 @@ namespace Application.Utility.VMs
     public class VMIDs
     {
         public int MyID { get; set; }
+        public string Email { get; set; }
     }
 }

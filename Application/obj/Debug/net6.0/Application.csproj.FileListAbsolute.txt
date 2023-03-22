@@ -83,3 +83,20 @@ D:\Asp.Net\OmnivarityProject\Ecommerce latest\Ecommerce-App-Demo\Application\obj
 D:\Asp.Net\OmnivarityProject\Ecommerce latest\Ecommerce-App-Demo\Application\obj\Debug\net6.0\refint\Application.dll
 D:\Asp.Net\OmnivarityProject\Ecommerce latest\Ecommerce-App-Demo\Application\obj\Debug\net6.0\Application.pdb
 D:\Asp.Net\OmnivarityProject\Ecommerce latest\Ecommerce-App-Demo\Application\obj\Debug\net6.0\ref\Application.dll
+D:\Shariar\Shariar\EcomAPI\Latest2\Ecommerce-App-Demo\Application\bin\Debug\net6.0\Application.deps.json
+D:\Shariar\Shariar\EcomAPI\Latest2\Ecommerce-App-Demo\Application\bin\Debug\net6.0\Application.dll
+D:\Shariar\Shariar\EcomAPI\Latest2\Ecommerce-App-Demo\Application\bin\Debug\net6.0\Application.pdb
+D:\Shariar\Shariar\EcomAPI\Latest2\Ecommerce-App-Demo\Application\bin\Debug\net6.0\Domain.dll
+D:\Shariar\Shariar\EcomAPI\Latest2\Ecommerce-App-Demo\Application\bin\Debug\net6.0\Infrastructure.dll
+D:\Shariar\Shariar\EcomAPI\Latest2\Ecommerce-App-Demo\Application\bin\Debug\net6.0\Infrastructure.pdb
+D:\Shariar\Shariar\EcomAPI\Latest2\Ecommerce-App-Demo\Application\bin\Debug\net6.0\Domain.pdb
+D:\Shariar\Shariar\EcomAPI\Latest2\Ecommerce-App-Demo\Application\obj\Debug\net6.0\Application.csproj.AssemblyReference.cache
+D:\Shariar\Shariar\EcomAPI\Latest2\Ecommerce-App-Demo\Application\obj\Debug\net6.0\Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\Shariar\Shariar\EcomAPI\Latest2\Ecommerce-App-Demo\Application\obj\Debug\net6.0\Application.AssemblyInfoInputs.cache
+D:\Shariar\Shariar\EcomAPI\Latest2\Ecommerce-App-Demo\Application\obj\Debug\net6.0\Application.AssemblyInfo.cs
+D:\Shariar\Shariar\EcomAPI\Latest2\Ecommerce-App-Demo\Application\obj\Debug\net6.0\Application.csproj.CoreCompileInputs.cache
+D:\Shariar\Shariar\EcomAPI\Latest2\Ecommerce-App-Demo\Application\obj\Debug\net6.0\Application.csproj.CopyComplete
+D:\Shariar\Shariar\EcomAPI\Latest2\Ecommerce-App-Demo\Application\obj\Debug\net6.0\Application.dll
+D:\Shariar\Shariar\EcomAPI\Latest2\Ecommerce-App-Demo\Application\obj\Debug\net6.0\refint\Application.dll
+D:\Shariar\Shariar\EcomAPI\Latest2\Ecommerce-App-Demo\Application\obj\Debug\net6.0\Application.pdb
+D:\Shariar\Shariar\EcomAPI\Latest2\Ecommerce-App-Demo\Application\obj\Debug\net6.0\ref\Application.dll

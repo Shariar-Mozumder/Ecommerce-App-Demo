@@ -1,4 +1,5 @@
 ﻿using Application.Manager;
+using Application.Service;
 using Application.Utility.Common;
 using Application.Utility.VMs;
 using Domain;
@@ -18,9 +19,11 @@ namespace Ecommerce.Controllers
     public class UserController : ControllerBase
     {
         public readonly IUserManager _userManager;
-        public UserController(IUserManager userManager)
+        public readonly IUserService _userService;
+        public UserController(IUserManager userManager, IUserService userService)
         {
             _userManager= userManager;
+            _userService= userService;
         }
 
         //[HttpPost]
@@ -87,15 +90,15 @@ namespace Ecommerce.Controllers
             };
             var token = tokenHandler.CreateToken(tokenDescriptor);
             var tokenString = tokenHandler.WriteToken(token);
-
+            var loggedinUser = await _userService.GetUserbyEmail(user.Email);
             // return basic user info and authentication token
             return Ok(new
             {
-                UserID = user.UserID,
-                FirstName = user.FirstName,
-                LastName = user.LastName,
-                Email = user.Email,
-                IsAdmin = user.IsAdmin,
+                UserID = loggedinUser.UserID,
+                FirstName = loggedinUser.FirstName,
+                LastName = loggedinUser.LastName,
+                Email = loggedinUser.Email,
+                IsAdmin = loggedinUser.IsAdmin,
                 Token = tokenString
             });
         }
@@ -148,6 +151,25 @@ namespace Ecommerce.Controllers
             {
                 VMIDs ids = JsonConvert.DeserializeObject<VMIDs>(requestMessage.RequestObj.ToString());
                 responseMessage = await _userManager.GetUserbyID(ids.MyID);
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+
+            return responseMessage;
+        }
+
+        [HttpPost]
+        [Route("GetUserbyEmail")]
+        public async Task<ResponseMessage> GetUserbyEmail(RequestMessage requestMessage)
+        {
+            ResponseMessage responseMessage = new ResponseMessage();
+            try
+            {
+                VMIDs ids = JsonConvert.DeserializeObject<VMIDs>(requestMessage.RequestObj.ToString());
+                responseMessage = await _userManager.GetUserbyEmail(ids.Email);
             }
             catch (Exception ex)
             {

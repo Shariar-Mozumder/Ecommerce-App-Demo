@@ -8,7 +8,7 @@ import { AuthService } from './services/auth-services/AuthService';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit  {
- 
+
   title = 'ecommerce_client';
   isLoggedIn$!: Observable<boolean>;
 
