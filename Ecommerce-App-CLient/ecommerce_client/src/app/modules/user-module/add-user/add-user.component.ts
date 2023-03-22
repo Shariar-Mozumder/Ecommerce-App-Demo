@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router, ActivatedRoute } from '@angular/router';
+import { ToastrService } from 'ngx-toastr';
 import { UserService } from 'src/app/services/ecommerce-services/user.service';
 import { RequestMessage } from 'src/app/services/model/RequestMessage';
 import { User } from 'src/app/services/model/User';
@@ -17,12 +18,11 @@ export class AddUserComponent implements OnInit{
   userId:number=0;
   requestMessage:RequestMessage= new RequestMessage();
 
-  constructor(private fb: FormBuilder, private userService: UserService,private _router: Router, private _avRoute: ActivatedRoute){}
+  constructor(private fb: FormBuilder,private toastr: ToastrService, private userService: UserService,private _router: Router, private _avRoute: ActivatedRoute){}
   ngOnInit(): void {
     this.userId = this._avRoute.snapshot.params['id'] > 0?this._avRoute.snapshot.params['id']:0;
     this.createForm();
     this.getUserById();
-    debugger
 
   }
 
@@ -45,11 +45,11 @@ export class AddUserComponent implements OnInit{
     console.log('aaaaa',data);
 
     this.requestMessage.RequestObj=data;
-    debugger
+
     this.userService.getUserById(this.requestMessage).subscribe(data => {
       console.log("res",data);
       const res = data.responseObj;
-      debugger
+
       this.userForm = this.fb.group({
         firstName: res.firstName,
         lastName: res.lastName,
@@ -73,9 +73,9 @@ export class AddUserComponent implements OnInit{
     };
 
     this.requestMessage.RequestObj=user;
-debugger
     this.userService.addUser(this.requestMessage).subscribe((res: any) => {
       console.log(res);
+      this._router.navigate(['/user-list']);
     });
   }
 
@@ -92,9 +92,9 @@ debugger
     };
 
     this.requestMessage.RequestObj=user;
-debugger
     this.userService.addUser(this.requestMessage).subscribe((res: any) => {
       console.log(res);
+      this._router.navigate(['/user-list']);
     });
   }
 

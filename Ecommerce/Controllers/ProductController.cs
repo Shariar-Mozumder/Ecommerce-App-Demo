@@ -2,6 +2,7 @@
 using Application.Utility.Common;
 using Application.Utility.VMs;
 using Domain;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
@@ -20,6 +21,7 @@ namespace Ecommerce.Controllers
             _productManager = productManager;
         }
 
+        [Authorize(AuthenticationSchemes = Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerDefaults.AuthenticationScheme)]
         [HttpPost]
         [Route("SaveOrUpdateProduct")]
         public async Task<ResponseMessage> SaveProduct(RequestMessage requestMessage)
@@ -40,7 +42,7 @@ namespace Ecommerce.Controllers
 
             return responseMessage;
         }
-
+        [Authorize(AuthenticationSchemes = Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerDefaults.AuthenticationScheme)]
         [HttpGet]
         [Route("GetProductList")]
         public async Task<ResponseMessage> GetProductList()
@@ -59,6 +61,7 @@ namespace Ecommerce.Controllers
             return responseMessage;
         }
 
+        [Authorize(AuthenticationSchemes = Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerDefaults.AuthenticationScheme)]
         [HttpPost]
         [Route("GetProductByID")]
         public async Task<ResponseMessage> GetProductByID(RequestMessage requestMessage)

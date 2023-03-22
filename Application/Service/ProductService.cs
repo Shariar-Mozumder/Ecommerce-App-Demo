@@ -1,6 +1,7 @@
 ﻿using Application.Utility.VMs;
 using Domain;
 using Infrastructure;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -81,7 +82,7 @@ namespace Application.Service
                             {
                                 Product = p,
                                 ImageList = _context.Image.Where(i => i.ProductID == p.ProductID).ToList()
-                            }).FirstOrDefault();
+                            }).AsNoTracking().FirstOrDefault();
                 }
             }
             catch (Exception ex)

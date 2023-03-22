@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router, ActivatedRoute } from '@angular/router';
+import { ToastrService } from 'ngx-toastr';
 import { ProductService } from 'src/app/services/ecommerce-services/product.service';
 import { Product } from 'src/app/services/model/Product';
 import { RequestMessage } from 'src/app/services/model/RequestMessage';
@@ -18,11 +19,13 @@ export class AddproductComponent implements OnInit{
   urls:any = [];
   productId:number=0;
 
-  constructor(private fb: FormBuilder, private productService: ProductService,private _router: Router, private _avRoute: ActivatedRoute) { }
+  constructor(private fb: FormBuilder,private toastr: ToastrService, private productService: ProductService,private _router: Router, private _avRoute: ActivatedRoute) { }
   ngOnInit(): void {
     this.productId = this._avRoute.snapshot.params['id'] > 0?this._avRoute.snapshot.params['id']:0;
     this.createForm();
-    this.getProductById();
+    if (this.productId>0){
+      this.getProductById();
+    }
 
   }
 
@@ -65,6 +68,7 @@ export class AddproductComponent implements OnInit{
 
     this.productService.addProduct(this.requestMessage).subscribe((res: any) => {
       console.log(res);
+      this._router.navigate(['/product-list']);
     });
   }
 
@@ -76,12 +80,12 @@ export class AddproductComponent implements OnInit{
     console.log('aaaaa',data);
 
     this.requestMessage.RequestObj=data;
-    debugger
+
     this.productService.getProductById(this.requestMessage).subscribe(data => {
       console.log("res",data);
       const res = data.responseObj.product;
-      const img = data.responseObj.imageList.length >0 ? data.responseObj.imageList[0].imageName : ''  ;
-      debugger
+      const img = data.responseObj.imageList.length > 0 ? data.responseObj.imageList[0].imageName : ''  ;
+
       this.productForm = this.fb.group({
         productName: res.productName,
         quantity:res.quantity,
@@ -145,7 +149,7 @@ export class AddproductComponent implements OnInit{
 
     this.productService.addProduct(this.requestMessage).subscribe((res: any) => {
       console.log(res);
-      this._router.navigateByUrl('product-list');
+      this._router.navigate(['/product-list']);
     });
   }
 

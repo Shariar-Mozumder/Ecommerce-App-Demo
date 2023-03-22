@@ -26,46 +26,7 @@ namespace Ecommerce.Controllers
             _userService= userService;
         }
 
-        //[HttpPost]
-        //[Route("login")]
-        //public async Task<ResponseMessage> Login([FromBody] User user)
-        //{
-        //    ResponseMessage responseMessage = new ResponseMessage();
-        //    // Authenticate user (in your case, you might query your database to authenticate the user)
-        //    var isAuthenticated = await _userManager.AuthenticateUserAsync(user.Email, user.Password);
-        //    if (!isAuthenticated)
-        //    {
-        //        //responseMessage.JWTToken=null;
-        //        responseMessage.ResponseCode=401;
-        //        responseMessage.Message="UnAuthorized.";
-        //        return responseMessage;
-        //    }
-
-        //    // Build the token
-        //    var tokenHandler = new JwtSecurityTokenHandler();
-        //    var key = Encoding.ASCII.GetBytes("HelloOmnivarityThisIsShariarforyou"); // replace with your own secret key
-        //    var tokenDescriptor = new SecurityTokenDescriptor
-        //    {
-        //        Subject = new ClaimsIdentity(new Claim[]
-        //        {
-        //    new Claim(ClaimTypes.Name, user.Email),
-        //    new Claim(ClaimTypes.Role, (bool)user.IsAdmin ? "Admin" : "User")
-        //        }),
-        //        Expires = DateTime.UtcNow.AddDays(7), // adjust as needed
-        //        SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
-        //    };
-        //    var token = tokenHandler.CreateToken(tokenDescriptor);
-
-        //    // Return the token as a response
-        //    //responseMessage.JWTToken=tokenHandler.WriteToken(token);
-        //    responseMessage.ResponseCode=200;
-        //    responseMessage.Message="Authorized.";
-        //    return responseMessage;
-            
-        //}
-
-        // Method to authenticate user (in your case, you might query your database to authenticate the user)
-
+   
 
         [HttpPost("login")]
         public async Task<IActionResult> Login([FromBody] User user)
@@ -103,6 +64,7 @@ namespace Ecommerce.Controllers
             });
         }
 
+        [Authorize(AuthenticationSchemes = Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerDefaults.AuthenticationScheme)]
         [HttpPost]
         [Route("SaveOrUpdateUser")]
         public async Task<ResponseMessage> SaveUser(RequestMessage requestMessage)
@@ -123,6 +85,7 @@ namespace Ecommerce.Controllers
             return responseMessage;
         }
 
+        [Authorize(AuthenticationSchemes = Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerDefaults.AuthenticationScheme)]
         [HttpGet]
         [Route("GetUserList")]
         public async Task<ResponseMessage> GetUserList()
@@ -141,7 +104,7 @@ namespace Ecommerce.Controllers
             return responseMessage;
         }
 
-        //[Authorize(AuthenticationSchemes = Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerDefaults.AuthenticationScheme)]
+        [Authorize(AuthenticationSchemes = Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerDefaults.AuthenticationScheme)]
         [HttpPost]
         [Route("GetUserByID")]
         public async Task<ResponseMessage> GetUserByID(RequestMessage requestMessage)

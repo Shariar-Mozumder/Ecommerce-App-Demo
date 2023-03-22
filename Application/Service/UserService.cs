@@ -1,5 +1,6 @@
 ﻿using Domain;
 using Infrastructure;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,19 +24,31 @@ namespace Application.Service
             {
                 if (user.UserID > 0)
                 {
-                    var existedUser = _context.User.Where(x => x.Email == user.Email).FirstOrDefault();
-                    if(existedUser.UserID!=user.UserID && existedUser.Email == user.Email)
+                    var existedUser = _context.User.Where(x => x.Email == user.Email).AsNoTracking().FirstOrDefault();
+                    if (existedUser != null)
                     {
-                        return user;
+                        if (existedUser.UserID != user.UserID && existedUser.Email == user.Email)
+                        {
+                            return user;
+                        }
+                        else
+                        {
+                            _context.User.Update(user);
+                            var isUpdated = _context.SaveChanges();
+                        }
                     }
-                    _context.User.Update(user);
-                    var isUpdated = _context.SaveChangesAsync();
+                    else
+                    {
+                        _context.User.Update(user);
+                        var isUpdated = _context.SaveChanges();
+                    }
+                    
                 }
                 else
                 {
                     if(user.Email!= null)
                     {
-                        var existedUser = _context.User.Where(x => x.Email == user.Email).FirstOrDefault();
+                        var existedUser = _context.User.Where(x => x.Email == user.Email).AsNoTracking().FirstOrDefault();
                         if (existedUser != null)
                         {
                             return user;
@@ -60,7 +73,7 @@ namespace Application.Service
             List<User> users = new List<User>();
             try
             {
-                users = _context.User.ToList();
+                users = _context.User.AsNoTracking().ToList();
             }
             catch (Exception ex)
             {
@@ -78,7 +91,7 @@ namespace Application.Service
             {
                 if (userID > 0)
                 {
-                    user =  _context.User.Where(x => x.UserID == userID).FirstOrDefault();
+                    user =  _context.User.Where(x => x.UserID == userID).AsNoTracking().FirstOrDefault();
                 }
             }
             catch (Exception ex)
@@ -94,7 +107,7 @@ namespace Application.Service
         {
             try
             {
-                var user=_context.User.Where(x => x.Email==email && x.Password==password).FirstOrDefault();
+                var user=_context.User.Where(x => x.Email==email && x.Password==password).AsNoTracking().FirstOrDefault();
                 if (user!=null)
                 {
                     return true;
@@ -118,7 +131,7 @@ namespace Application.Service
             {
                 if (!string.IsNullOrEmpty(email))
                 {
-                    user = _context.User.Where(x => x.Email == email).FirstOrDefault();
+                    user = _context.User.Where(x => x.Email == email).AsNoTracking().FirstOrDefault();
                 }
             }
             catch (Exception ex)

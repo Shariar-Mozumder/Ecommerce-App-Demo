@@ -6,51 +6,41 @@
             <ul id="sidebarnav">
                 <!-- User Profile-->
                 <li class="sidebar-item pt-2">
-                    <a class="sidebar-link waves-effect waves-dark sidebar-link" routerLink="product-list"
-                        aria-expanded="false">
+                    <a class="sidebar-link waves-effect waves-dark sidebar-link" routerLink="product-list" aria-expanded="false" >
                         <i class="far fa-clock" aria-hidden="true"></i>
                         <span class="hide-menu">Product Card List</span>
                     </a>
                 </li>
                 <li class="sidebar-item pt-2" >
                     <a class="sidebar-link waves-effect waves-dark sidebar-link"  routerLink="upload-product"
-                        aria-expanded="false">
+                        aria-expanded="false" >
                         <i class="far fa-clock" aria-hidden="true"></i>
                         <span class="hide-menu">Upload Product</span>
                     </a>
                 </li>
-                <li class="sidebar-item pt-2" *ngIf="isAdmin">
+                <li class="sidebar-item pt-2">
                     <a class="sidebar-link waves-effect waves-dark sidebar-link"  routerLink="cms-list"
-                        aria-expanded="false">
+                        aria-expanded="false" *ngIf="isAdmin">
                         <i class="far fa-clock" aria-hidden="true"></i>
                         <span class="hide-menu">CMS Product</span>
                     </a>
                 </li>
                 <li class="sidebar-item">
                     <a class="sidebar-link waves-effect waves-dark sidebar-link" routerLink="user-list"
-                        aria-expanded="false">
+                        aria-expanded="false" *ngIf="isAdmin">
                         <i class="fa fa-user" aria-hidden="true"></i>
                         <span class="hide-menu">User List</span>
                     </a>
                 </li>
                 <li class="sidebar-item">
                   <a class="sidebar-link waves-effect waves-dark sidebar-link" routerLink="add-user"
-                      aria-expanded="false">
+                      aria-expanded="false" *ngIf="isAdmin">
                       <i class="fa fa-user" aria-hidden="true"></i>
                       <span class="hide-menu">Add User</span>
                   </a>
               </li>
                 <li class="sidebar-item">
-                    <a class="sidebar-link waves-effect waves-dark sidebar-link"
-                        aria-expanded="false">
-                        <i class="fa fa-table" aria-hidden="true"></i>
-                        <span class="hide-menu">Profile</span>
-                    </a>
-                </li>
-
-                <li class="sidebar-item">
-                  <a class="sidebar-link waves-effect waves-dark sidebar-link"
-                      aria-expanded="false">
+                  <a class="sidebar-link waves-effect waves-dark sidebar-link" aria-expanded="false" (click)="onLogout()">
                       <i class="fa fa-table" aria-hidden="true"></i>
                       <span class="hide-menu">Logout</span>
                   </a>

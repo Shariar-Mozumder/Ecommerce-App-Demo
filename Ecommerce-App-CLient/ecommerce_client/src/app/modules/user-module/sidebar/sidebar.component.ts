@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { Observable } from 'rxjs';
 import { AuthService } from 'src/app/services/auth-services/AuthService';
+import { LoginService } from 'src/app/services/auth-services/login.service';
 
 @Component({
   selector: 'app-sidebar',
@@ -8,20 +8,18 @@ import { AuthService } from 'src/app/services/auth-services/AuthService';
   styleUrls: ['./sidebar.component.css']
 })
 export class SidebarComponent {
-  isLoggedIn$!: Observable<boolean>;
   isAdmin:any;
 
-  constructor(private authService: AuthService) { }
+  constructor(private authService: AuthService,private loginService:LoginService) { }
 
   ngOnInit() {
     let user:any = localStorage.getItem('User');
     const users = JSON.parse(user);
-    this.isLoggedIn$ = this.authService.isLoggedIn;
     this.isAdmin = users.isAdmin;
-    debugger
   }
 
   onLogout() {
+    this.loginService.notify(false);
     this.authService.logout();
   }
 }

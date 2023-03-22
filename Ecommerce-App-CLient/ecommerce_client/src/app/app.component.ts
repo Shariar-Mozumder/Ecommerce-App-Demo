@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { AuthService } from './services/auth-services/AuthService';
+import { LoginService } from './services/auth-services/login.service';
 
 @Component({
   selector: 'app-root',
@@ -11,11 +12,16 @@ export class AppComponent implements OnInit  {
 
   title = 'ecommerce_client';
   isLoggedIn$!: Observable<boolean>;
+  isMenuHide:Boolean = false;
 
-  constructor(private authService: AuthService) { }
+
+  constructor(private authService: AuthService,private loginService:LoginService) { }
 
   ngOnInit() {
-    this.isLoggedIn$ = this.authService.isLoggedIn;
+
+    this.loginService.hideNavBarEvent.subscribe(res => {
+      this.isMenuHide = res;
+      })
   }
 
   onLogout() {

@@ -32,34 +32,23 @@ export class LoginComponent implements OnInit {
 
 
 
-  // onSubmit() {
-  //   this.formSubmitAttempt = true;
-  //   // this.router.navigateByUrl('/demo');
-  //   this.authService.login(this.form.value);
-  // }
-
   onSubmit() {
     if (this.form.valid) {
-         //this.authService.RequestObj = this.user;
-         const user = {
+        const user = {
           email: this.form.value.email,
           password: this.form.value.password,
         };
         this.requestMessage.RequestObj=user;
         this.loginService.login(user).subscribe((response:any) => {
+        this.loginService.notify(true);
         console.log('user',response);
         localStorage.setItem('User', JSON.stringify(response));
-        localStorage.setItem('Token', JSON.stringify(response.token));
-
+        localStorage.setItem('Token', response.token);
         let user:any = localStorage.getItem('User');
         const users = JSON.parse(user);
-        debugger
         if (users){
-          this.authService.loginAuth(true)
+          this.authService.loginAuth(true);
         }
-
-     //   this.toastr.warning(response.Message);
-
         });
     }
 }

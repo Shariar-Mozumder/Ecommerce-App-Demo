@@ -11,16 +11,15 @@ import { AuthGuard } from './services/auth-services/authGuard';
 
 const routes: Routes = [
   {path: '', redirectTo: 'login' ,pathMatch:'full'},
-  { path: 'demo', component: DemoComponent, canActivate: [AuthGuard] },
-  { path: 'upload-product', component: AddproductComponent, canActivate: [AuthGuard] },
-  { path: 'cms-list/edit/:id', component: AddproductComponent, canActivate: [AuthGuard] },
-  { path: 'product-list', component: ProductlistComponent, canActivate: [AuthGuard] },
-  { path: 'cms-list', component: CmsProductComponent, canActivate: [AuthGuard] },
-  { path: 'user-list', component: UserlistComponent, canActivate: [AuthGuard] },
-  { path: 'add-user', component: AddUserComponent, canActivate: [AuthGuard] },
-  { path: 'user-list/edit/:id', component: AddUserComponent, canActivate: [AuthGuard] },
+  { path: 'upload-product', component: AddproductComponent, canActivate:[AuthGuard] },
+  { path: 'cms-list/edit/:id', component: AddproductComponent , canActivate:[AuthGuard]},
+  { path: 'product-list', component: ProductlistComponent, canActivate:[AuthGuard] },
+  { path: 'cms-list', component: CmsProductComponent, canActivate:[AuthGuard] },
+  { path: 'user-list', component: UserlistComponent, canActivate:[AuthGuard]},
+  { path: 'add-user', component: AddUserComponent, canActivate:[AuthGuard]},
+  { path: 'user-list/edit/:id', component: AddUserComponent , canActivate:[AuthGuard]},
   { path: 'login', component: LoginComponent },
-  { path: '**', redirectTo: ''}
+  { path: '**', redirectTo: 'login',pathMatch:'full'}
 ];
 
 @NgModule({
