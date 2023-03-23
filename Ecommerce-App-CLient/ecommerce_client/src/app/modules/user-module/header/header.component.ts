@@ -8,10 +8,12 @@ import { AuthService } from 'src/app/services/auth-services/AuthService';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-
+  users : any
 
   constructor(private authService: AuthService) { }
   ngOnInit() {
+    let user:any = localStorage.getItem('User');
+     this.users = JSON.parse(user);
   }
 
 
