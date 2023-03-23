@@ -82,3 +82,15 @@ D:\Asp.Net\OmnivarityProject\Latest\Ecommerce-App-Demo\Domain\obj\Debug\net6.0\D
 D:\Asp.Net\OmnivarityProject\Latest\Ecommerce-App-Demo\Domain\obj\Debug\net6.0\refint\Domain.dll
 D:\Asp.Net\OmnivarityProject\Latest\Ecommerce-App-Demo\Domain\obj\Debug\net6.0\Domain.pdb
 D:\Asp.Net\OmnivarityProject\Latest\Ecommerce-App-Demo\Domain\obj\Debug\net6.0\ref\Domain.dll
+D:\Shariar\Shariar\EcomAPI\Latest3\Ecommerce-App-Demo\Domain\bin\Debug\net6.0\Domain.deps.json
+D:\Shariar\Shariar\EcomAPI\Latest3\Ecommerce-App-Demo\Domain\bin\Debug\net6.0\Domain.dll
+D:\Shariar\Shariar\EcomAPI\Latest3\Ecommerce-App-Demo\Domain\bin\Debug\net6.0\Domain.pdb
+D:\Shariar\Shariar\EcomAPI\Latest3\Ecommerce-App-Demo\Domain\obj\Debug\net6.0\Domain.csproj.AssemblyReference.cache
+D:\Shariar\Shariar\EcomAPI\Latest3\Ecommerce-App-Demo\Domain\obj\Debug\net6.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Shariar\Shariar\EcomAPI\Latest3\Ecommerce-App-Demo\Domain\obj\Debug\net6.0\Domain.AssemblyInfoInputs.cache
+D:\Shariar\Shariar\EcomAPI\Latest3\Ecommerce-App-Demo\Domain\obj\Debug\net6.0\Domain.AssemblyInfo.cs
+D:\Shariar\Shariar\EcomAPI\Latest3\Ecommerce-App-Demo\Domain\obj\Debug\net6.0\Domain.csproj.CoreCompileInputs.cache
+D:\Shariar\Shariar\EcomAPI\Latest3\Ecommerce-App-Demo\Domain\obj\Debug\net6.0\Domain.dll
+D:\Shariar\Shariar\EcomAPI\Latest3\Ecommerce-App-Demo\Domain\obj\Debug\net6.0\refint\Domain.dll
+D:\Shariar\Shariar\EcomAPI\Latest3\Ecommerce-App-Demo\Domain\obj\Debug\net6.0\Domain.pdb
+D:\Shariar\Shariar\EcomAPI\Latest3\Ecommerce-App-Demo\Domain\obj\Debug\net6.0\ref\Domain.dll
